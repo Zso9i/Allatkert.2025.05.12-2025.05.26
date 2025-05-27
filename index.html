@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Állatkert</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Állatkert</title>
 </head>
 <body>
   <header>
@@ -143,125 +143,51 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="container">
-                <div class="row"></div>
-            </div>
-        </section>
+       <section class="lakoink">
+    <h2>LAKÓINK</h2>
+    <div class="tabs">
+      <button class="active">Összes</button>
+      <button>Rovarok</button>
+      <button>Hüllők, kétéltűek</button>
+      <button>Madarak</button>
+      <button>Emlősök</button>
+    </div>
+
+    <div class="carousel-wrapper">
+      <button class="arrow left" onclick="scrollLeft()">&#8592;</button>
+      <div class="carousel" id="carousel">
+        <div class="animal">
+          <img src="alpaka.jpg" alt="Alpaka">
+          <p>Alpaka</p>
+        </div>
+        <div class="animal">
+          <img src="elefant.jpg" alt="Ázsiai elefánt">
+          <p>Ázsiai elefánt</p>
+        </div>
+        <div class="animal">
+          <img src="kenguru.jpg" alt="Bennett kenguru">
+          <p>Bennett kenguru</p>
+        </div>
+        <div class="animal">
+          <img src="mokusmajom.jpg" alt="Bolíviai mókusmajom">
+          <p>Bolíviai mókusmajom</p>
+        </div>
+        <div class="animal">
+          <img src="borjufoka.jpg" alt="Borjúfóka">
+          <p>Borjúfóka</p>
+        </div>
+      </div>
+      <button class="arrow right" onclick="scrollRight()">&#8594;</button>
+    </div>
+
+    <a href="#" class="all-button">ÖSSZES LAKÓ</a>
+  </section>
+
+ 
     </main>
-    <script>
-        
-        let cart = [];
-
-        function addToCart(name, price, image) {
-            const existingItem = cart.find(item => item.name === name);
-            if (existingItem) {
-                existingItem.quantity++;
-            } else {
-                cart.push({ name, price, image, quantity: 1 });
-            }
-            updateCart();
-        }
-
-        function updateCart() {
-            const cartItems = document.getElementById('cart-items');
-            const cartCount = document.getElementById('cart-count');
-            const totalPriceElement = document.getElementById('total-price');
-            
-            cartItems.innerHTML = '';
-            let totalPrice = 0;
-
-            cart.forEach(item => {
-                const li = document.createElement('li');
-                li.classList.add('cart-item');
-                li.innerHTML = `
-                    <div class ="cart__full">
-                        <div class ="cart__things">
-                            <img src="${item.image}" alt="${item.name}">
-                            <span>${item.name}<br>$${item.price} x ${item.quantity}</span>
-                        </div>
-                        <div class ="cart__gombok">
-                            <button class="add" onclick="changeQuantity('${item.name}', 1)">+</button>
-                            <button onclick="changeQuantity('${item.name}', -1)">-</button>
-                        </div>
-                    </div>
-                `;
-                cartItems.appendChild(li);
-                totalPrice += item.price * item.quantity;
-            });
-
-            totalPriceElement.textContent = `All : $${totalPrice}`;
-            cartCount.textContent = cart.length;
-        }
-
-        document.getElementById('clear-cart').addEventListener('click', () => {
-            cart = [];
-            updateCart();
-        });
-
-        document.getElementById('close-cart').addEventListener('click', () => {
-            const cartContainer = document.getElementById('cart-container');
-            cartContainer.classList.remove('open');
-        });
-
-        document.getElementById('cart-icon').addEventListener('click', () => {
-            const cartContainer = document.getElementById('cart-container');
-            cartContainer.classList.toggle('open');
-        });
-
-        function removeFromCart(name) {
-            cart = cart.filter(item => item.name !== name);
-            updateCart();
-        }
-
-        function changeQuantity(name, change) {
-            const item = cart.find(item => item.name === name);
-            if (item) {
-                item.quantity += change;
-                if (item.quantity <= 0) {
-                    removeFromCart(name);
-                } else {
-                    updateCart();
-                }
-            }
-        }
-
-
-
-    </script>
-  <script>
-    const menuBtn = document.getElementById('menuBtn');
-    const closeBtn = document.getElementById('closeBtn');
-    const overlayMenu = document.getElementById('overlayMenu');
-
-    menuBtn.addEventListener('click', () => {
-    overlayMenu.classList.add('active');
-    });
-
-    closeBtn.addEventListener('click', () => {
-    overlayMenu.classList.remove('active');
-    });
-
-  </script>
-  <script>
-    const images = [
-    'img/kezdokep.jfif',
-    'img/manki.jpg',
-    'img/zsiraf.jpg',
-    'img/koala.jfif'
-    ];
-
-    let index = 0;
-    const section = document.querySelector('section.kepek');
-
-    function changeBackground() {
-    section.style.backgroundImage = `url(${images[index]})`;
-    index = (index + 1) % images.length;
-    }
-
-    changeBackground();
-    setInterval(changeBackground, 5000);
-
-  </script>
+    <script src="js/shop.js"></script>
+    <script src="js/gomb.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/scriptt.js"></script>
 </body>
 </html>
