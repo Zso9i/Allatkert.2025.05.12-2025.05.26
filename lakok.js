@@ -107,7 +107,7 @@ const animals = [
         : animals.filter((a) => a.type === currentFilter);
 
     if (filteredAnimals.length === 0) {
-      wrapper.innerHTML = `<div class="swiper-slide"><p style="color: purple; font-weight: bold;">Nincs megjeleníthető állat.</p></div>`;
+      wrapper.innerHTML = `<div class="swiper-slide"><p>Nincs megjeleníthető állat.</p></div>`;
     } else {
       filteredAnimals.forEach((animal) => {
         const slide = createSlide(animal);
