@@ -1,12 +1,29 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    overflow-x: clip;
+}
+header .row{
+    margin: 0 !important;
 }
 header {
-    display: flex;
     justify-content: space-between;
     align-items: center;
 
+}
+.kozep{
+    display: flex;
+    align-items: center;
+}
+.koszon{
+    background-color: hsla(169, 81%, 41%, 0.315);
+    backdrop-filter: blur(16px);
+    text-align: left;
+    color: #000000;
+    padding: 20px;
+    --bs-gutter-y: 30%;
+    border-radius: 25px;
+    padding-right: 5px;
 }
 #menuBtn {
     font-size: 2rem;
@@ -48,10 +65,44 @@ header {
     gap: 2rem;
     margin-top: 2rem;
 }
+.menu-columns .container:last-of-type, .icooc div:first-of-type, .icooc div:last-of-type{
+    text-align: left;
+}
+.icooc div:first-of-type span, .column h3{
+    text-transform: uppercase;
+}
+.menu-columns .container:last-of-type{
+    margin-top: 90px;
+}
+.menu-columns .container:last-of-type ul li{
+    margin-left: 15px;
+}
+.icooc{
+    margin-top: 90px;
+}
+.icooc div:last-of-type{
+    padding-left: 0;
+
+}
+.iconok{
+    font-size: 20px;
+}
+.icooc .koves {
+    padding-right: 0;
+    padding-top: 4px;
+}
+.icooc .koves h3{
+    text-align: right;
+    font-size: 19px;
+}
+.icooc div:first-of-type{
+    font-size: 18px;
+}
 .column h3 {
     margin-bottom: 1rem;
     font-size: 1.2rem;
     color: #2d531c;
+
 }
 ul {
     list-style: none;
@@ -87,16 +138,29 @@ a{
     font-size: 15px;
     border: none;
 }
+.logo{
+    margin-top: -20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.logo img{
+    height: 80px;
+}
+.navi ul li a{
+    font-size: 19px;
+    color: #16d4d1;
+    font-weight: 750;
+}
 .navi ul{
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 4px;
 }
 .hammburger .hamburger{
     color: #000;
     margin-top: 0;
     padding-top: 0;
 }
-main section:first-of-type{
+header .allatok{
     /*background-image: url(..//img/eza_kep.jpg);*/
     height: 100vh;
     transition: background-image 0.2s ease-in-out;
@@ -104,7 +168,7 @@ main section:first-of-type{
     justify-content: center;
     font-size: 2rem;
 }
-main section:first-of-type p{
+header .allatok p{
     font-size: 19px;
 }
 
@@ -146,7 +210,7 @@ main section:first-of-type p{
         width: 100%;
         height: 90vh;}
   }
-  main section:first-of-type {
+  header .allatok {
     animation: backgroundChange 22s infinite;
   }
 
@@ -256,14 +320,16 @@ main section:first-of-type p{
 
 #close-cart {
     margin: 0;
-    color: var(--text-color);
+    color: rgb(38, 218, 231);
     cursor: pointer;
     font-size: 20px;
     transition: .3s;
 }
 
 #close-cart:hover {
-    color: var(--title-color);
+    color: rgb(60, 255, 0);
+    background-color: #000000a2;
+    border-radius: 25px;
 }
 
 .cart__close{
@@ -372,7 +438,6 @@ button:hover{
 .header{
     width: 100%;
     background-color: transparent;
-    position: fixed;
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
@@ -550,11 +615,41 @@ main section {
     margin-bottom: 8x !important;
 }
 .container-fluid{
-    width: 98%;
+    width: 100%;
     padding-bottom: 0;
 }
 
+.maps .container-fluid, .maps .container-fluid img{
+    width: 100%;
 
+
+}
+.maps .container-fluid {
+    padding: 0;
+}
+
+
+.filters{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.filters ul li button{
+    font-size: 17px;
+    padding: 10px 15px;
+}
+.filters ul {
+    justify-content:space-evenly;
+    display: flex;
+}
+.lakokk{
+    background-color: #8df85ba3;
+    padding: 50px 0 25px 0;
+}
+.lakokk h2{
+    color: #222422c9;
+    padding-bottom: 10px;
+    text-align: center;
+}
 .card {
     width: 220px;
     height: 254px;
@@ -588,7 +683,7 @@ main section {
     text-align: center;
     background-color: rgb(42, 57, 41);
     color: rgb(186, 255, 25);
-    border: 3px solid rgb(8, 161, 177);
+    border: 3px solid rgb(0, 0, 128);
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -610,8 +705,8 @@ main section {
     width: 90%;
 }
 .upper-part-back {
-    background-color: rgb(87, 77, 42);
-    color: lightgray;
+    background-color: rgb(0, 255, 255);
+    color: #000;
     transform: rotatex(180deg);
     text-align: center;
 }
@@ -645,7 +740,7 @@ main section {
     backface-visibility: visible;
     border-radius: 40px;
     color: rgb(0, 0, 0);
-    background-color: rgb(64, 64, 64);
+    background-color: rgb(255, 255, 0);
     transform: rotateX(180deg);
     z-index: 1;
     transition: border-radius 0.6s;
@@ -660,16 +755,15 @@ main section {
 }
 
 .card:hover > .lower-part > .lower-part-back {
-    border: 3px solid rgb(64, 64, 64);
+    border: 3px solid rgb(0, 0, 128);
     border-radius: 0 0 40px 40px;
 }
 
 .swiper {
     width: 100%;
     padding: 20px 0;
-    height: 300px;
+    height: 340px;
 }
-
 .swiper-slide {
     display: flex;
     justify-content: center;
@@ -704,6 +798,160 @@ main section {
 .swiper-button-next {
     color: rgb(61, 130, 98) !important;
 }
+
 .swiper-pagination{
     color: #8df85b !important;
+}
+
+
+.infinite-scroll {
+    user-select: none;
+    display: block;
+}
+
+.scroll-container {
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+
+}
+
+.scroll-row {
+    display: flex;
+    gap: 20px;
+    user-select: none;
+    pointer-events: auto;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-name: scroll-left;
+    cursor: grab;
+}
+.scroll-row.row1 {
+    animation-duration: 40s;
+}
+.scroll-row.row2 {
+    animation-duration: 35s;
+}
+
+
+.scroll-row.dragging {
+    animation-play-state: paused !important;
+    cursor: grabbing;
+    pointer-events: auto;
+}
+.scroll-row img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.scroll-row img:hover {
+    transform: scale(1.05);
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-50% - 10px));
+    }
+}
+main section{
+    height: 100%;
+}
+
+
+
+.info-section {
+    padding: 60px 20px;
+    background-image: url(/img/letöltés.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+  
+.info-box {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+  
+.info-box:hover {
+    transform: translateY(-5px);
+}
+  
+.info-box h4 {
+    color: #2f5d2f;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+  
+.info-box p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+  
+.val {
+    display: inline-block;
+    color: #0066cc;
+    font-weight: 600;
+    margin-top: 8px;
+    text-decoration: none;
+}
+.koz{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.btn-green {
+    background-color: #5da130;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 30px;
+    margin: 6px 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+  
+  
+@media (max-width: 576px) {
+    .info-box {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .btn-green {
+      width: 100%;
+      font-size: 15px;
+    }
+  
+    .info-box h4 {
+      font-size: 20px;
+    }
+    .koz{
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+    }
+}
+footer ul{
+    display: flex;
+}
+footer ul .iconok{
+    padding-left: 25px;
+}
+footer{
+    font-weight: 400;
 }
