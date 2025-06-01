@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-		
-		<title>Állatkert</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="css/mobil.css">
+	<title>Állatkert</title>
 </head>
 <body>
 	<header>
 		<div class="container-fluid  hed">
-			<div class="row">
-				<div class="col-lg-2 logo"><img src="img/icon.png" alt="zoo" title="zoo"></div>
-				<div class="col-lg-7 navi">
-					<ul class="d-flex">
-						<li><a href="">Nyitvatartás</a></li>
-						<li><a href="">Állataink</a></li>
-						<li><a href="">Térkép</a></li>
-						<li><a href="">Programok</a></li>
+			<ul>
+				<div class="logo"> 
+					<a href=""><img src="img/icon.png" alt="zoo" title="zoo"></a>
+				</div>
+				<div class="navi">
+					<ul>
+						<li><a href="#nyitvatartas">Nyitvatartás</a></li>
+						<li><a href="#allataink">Állataink</a></li>
+						<li><a href="#terkep">Térkép</a></li>
+						<li><a href="#program">Programok</a></li>
 					</ul>
 				</div>
-				<div class="col-lg-3 hammburger">
-					<div class="row hamm">
-						<div class="col-lg-3">
+				<div class="hammburger">
+					<ul class="hamm">
+						<div>
 							<div class="nav__close" id="nav-close">
 								<i class="ri-close-line"></i>
 							</div>
@@ -42,13 +44,13 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-lg-2"></div>
-						<div class="col-lg-3 kossar">
+						<div class="kossar">
+
 							<button class="hamburger" id="menuBtn">&#9776;</button>
 						</div>
-					</div>
+					</ul>
 				</div>
-			</div>
+			</ul>
 			
 		</div>  
 		<div class=" allatok">
@@ -57,7 +59,7 @@
 					<div class="container">
 						<div class="row kozep">
 							<div class="col-lg-11 koszon">
-								<h1>Üdv. itt ujra..</h1>
+								<h1>Üdv. Itt újra.</h1>
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, doloribus aperiam nemo sed iure sequi fugit harum.</p>
 							</div>
 						</div>
@@ -84,74 +86,77 @@
 
 		<div class="menu-columns">
 			<div class="container kereso">
-				<div class="row">
-					<div class="col-lg-3">
-						icon
+				<ul>
+					<div class="logoo">
+						<a href=""><img src="img/icon.png" alt="zoo" title="zoo"></a>
 					</div>
-					<div class="col-lg-6">
+					<div class="col">
 						<input type="text" name="keres" placeholder="Kereső">
-						<a href="#"><i class="bi bi-search"></i></a>
+						<a href=""><i class="bi bi-search"></i></a>
 					</div>
-					<div class="col-lg-3">
-						<a href=""><i class="bi bi-ticket-detailed"></i> Jegyek</a>
+					<div>
+						<a href="#nyitvatartas"><i class="bi bi-ticket-detailed"></i> Jegyek</a>
 					</div>
-				</div>
+				</ul>
 			</div>
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-3 col-md-6 col-sm-12 column">
 						<h3>Menü</h3>
-						<ul>
-							<li><a href="">Kezdőlap</a></li>
-							<li><a href="">Aktualitások</a></li>
-							<li><a href="">Programok</a></li>
-							<li><a href="">Esti Séták az Állatkertben</a></li>
+						<ul class="ne">
+							<li><a href="#">Kezdőlap</a></li>
+							<li><a href="#program">Aktualitások</a></li>
+							<li><a href="#program">Programok</a></li>
+							<li><a href="#program">Esti Séták az Állatkertben</a></li>
 						</ul>
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-12 column">
 						<h3>Jegyek, Bérletek</h3>
-						<ul>
-							<li><a href="#">Jegy- és bérletárak</a></li>
-							<li><a href="#">Kedvezmények</a></li>
-							<li><a href="#">Ajándékutalvány</a></li>
+						<ul class="ne">
+							<li><a href="#nyitvatartas">Jegy- és bérletárak</a></li>
+							<li><a href="#nyitvatartas">Kedvezmények</a></li>
+							<li><a href="#nyitvatartas">Ajándékutalvány</a></li>
 						</ul>
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-12 column">
 						<h3>Látogatóknak</h3>
-						<ul>
-							<li><a href="#">Nyitvatartás</a></li>
-							<li><a href="#">Szolgáltatások</a></li>
-							<li><a href="#">Térkép</a></li>
+						<ul class="ne">
+							<li><a href="#nyitvatartas">Nyitvatartás</a></li>
+							<li><a href="#nyitvatartas">Szolgáltatások</a></li>
+							<li><a href="#nyitvatartas">Térkép</a></li>
 						</ul>
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-12 column">
 						<h3>Oktatás</h3>
-						<ul>
+						<ul class="ne">
 							<li><a href="#">Foglalkozások</a></li>
 							<li><a href="#">Ismeretterjesztő rendezvények</a></li>
 							<li><a href="#">Letölthető anyagok</a></li>
 						</ul>
 					</div>
 				</div>
-				<div class="row icooc">
-					<div class="col-lg-4 col-md-12 col-sm-12"><p><span>KUPON!</span></p></div>
-					<div class="col-lg-5 col-md-7 col-sm-12 koves text-end" ><h3 class="text-end">Kövess minket!</h3></div>
-					<div class="col-lg-3 col-md-4 col-sm-12">
-						<ul class="d-flex">
-							<li class="iconok"><a href=""><i class="bi bi-facebook"></i></a></li>
-							<li class="iconok"><a href=""><i class="bi bi-instagram"></i></a></li>
-							<li class="iconok"><a href=""><i class="bi bi-twitter"></i></a></li>
-							<li class="iconok"><a href=""><i class="bi bi-youtube"></i></a></li>
-						</ul>
+				<ul class="icooc">
+					<div><p><span>Kupon!</span></p></div>
+					<div class="ezt">
+						<div class="koves"><h3 >Kövess minket!</h3></div>
+						<div class="kovetes">
+							<ul class="bal">
+								<li class="iconok facebook"><a href=""><i class="bi bi-facebook"></i><span class="tooltip-text">facebook</span></a></li>
+								<li class="iconok instagram"><a href=""><i class="bi bi-instagram"></i><span class="tooltip-text">instagram</span></a></li>
+								<li class="iconok twitter"><a href=""><i class="bi bi-twitter"></i><span class="tooltip-text">twitter</span></a></li>
+								<li class="iconok youtube"><a href=""><i class="bi bi-youtube"></i><span class="tooltip-text">youtube</span></a></li>
+							</ul>
+						</div>
 					</div>
-				</div>
+					
+				</ul>
 			</div>
 		</div>
 	</div>
 	<main>
 		<section class="info-section">
 			<div class="container">
-				<div class="row gx-3 gy-3"> 
+				<div id="nyitvatartas" class="row gx-3 gy-3"> 
 					
 					<div class="col-lg-3 col-md-6 col-sm-12">
 						<div class="info-box">
@@ -165,8 +170,12 @@
 					<div class="col-lg-3 col-md-6 col-sm-12">
 						<div class="info-box">
 							<h4>Jegyárak</h4>
-							<p><strong>Felnőtt jegy:</strong><br>5 500 Ft</p>
-							<p><strong>Gyermek/Szeniorjegy:</strong><br>3 900 Ft</p>
+							<p><strong>Felnőtt jegy:</strong><br>5 500 Ft <button class="button popular__button" onclick="addToCart('Felnött jegy', 5500)">
+							<i class="bi bi-bag"></i>
+						</button></p>
+							<p><strong>Gyermek jegy:</strong><br>3 900 Ft<button class="button popular__button" onclick="addToCart('Gyerek jegy', 3900)">
+							<i class="bi bi-bag"></i>
+						</button></p>
 							<a href="#" class="val">Minden jegyár →</a><br>
 							<a href="#" class="val">Fizetési lehetőségek →</a>
 						</div>
@@ -183,7 +192,7 @@
 					<div class="col-lg-3 col-md-6 col-sm-12">
 						<div class="info-box">
 							<h4>Megközelítés</h4>
-							<button class="btn-green">🚗 Autóval + Parkolás</button><br>
+							<button class="btn-green"><a href="https://www.google.com/maps/dir/Tatab%C3%A1nya,+Vas%C3%BAt%C3%A1llom%C3%A1s,+j%C3%A1rda/Budapest,+F%C5%91v%C3%A1rosi+%C3%81llat-+%C3%A9s+N%C3%B6v%C3%A9nykert,+%C3%81llatkerti+k%C3%B6r%C3%BAt/@47.5167637,18.591087,11z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x476a417e755e954d:0x9d540ec018b03e1e!2m2!1d18.3939289!2d47.5855696!1m5!1m1!1s0x4741db8896028bc7:0xaf07c6529c6becf2!2m2!1d19.0776433!2d47.5189977!3e3?hl=hu&entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" target="_blank" class="koz">🚗 Autóval + Parkolás</a></button><br>
 							<button class="btn-green"><a href="https://www.google.com/maps/dir/Tatab%C3%A1nya,+Vas%C3%BAt%C3%A1llom%C3%A1s,+j%C3%A1rda/Budapest,+F%C5%91v%C3%A1rosi+%C3%81llat-+%C3%A9s+N%C3%B6v%C3%A9nykert,+%C3%81llatkerti+k%C3%B6r%C3%BAt/@47.5167637,18.591087,11z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x476a417e755e954d:0x9d540ec018b03e1e!2m2!1d18.3939289!2d47.5855696!1m5!1m1!1s0x4741db8896028bc7:0xaf07c6529c6becf2!2m2!1d19.0776433!2d47.5189977!3e3?hl=hu&entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" target="_blank" class="koz">🚌 Tömegközlekedéssel</a></button><br>
 						</div>
 					</div>
@@ -191,19 +200,8 @@
 				</div>
 			</div>
 		</section>
-		<section>
-			<div class="container">
-				<div class="row">
-					<div>
-						<button class="button popular__button" onclick="addToCart('Felnött jegy', 900)">
-							<i class="bi bi-bag"></i>
-						</button>
-					</div>
-				</div>
-			</div>
-		</section>
 		<section class="lakokk">
-			<div class="container-fluid">
+			<div id="allataink" class="container-fluid">
 				<h2>Lakóink</h2>
 				<div class="row">
 					<div class="filters">
@@ -225,11 +223,27 @@
 				</div>
 			</div>
 		</section>
+		<section>
+			<div id="program" class="container-fluid">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-2 kep">
+						<img class="w-100" src="img/vizishow.png" alt="vizishow" title="vizishow"><span class="tooltip-text">Vizishow</span>
+						<img class="w-100" src="img/jatszoter.jpg" alt="jatszoter" title="jatszoter"><span class="tooltip-text">Játszotér</span>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-2 kep">
+						<img class="w-100" src="img/tropicarium.jpg" alt="tropicarium" title="tropicarium"><span class="tooltip-text">Tropicarium</span>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-2 kep">
+						<img class="w-100" src="img/etterem.jpg" alt="etterem" title="etterem"><span class="tooltip-text">Étterem</span>
+					</div>
+				</div>
+			</div>
+		</section>
 		<section class="maps">
 			<div class="container-fluid">
-				<div class="row">
-					<div>
-						<img class="" src="img/map.jpg" alt="map" title="map">
+				<div id="terkep" class="row">
+					<div class="mapps">
+						<img class="" src="img/map.jpg" alt="map" title="map"><span class="tooltip-text">Térkép</span>
 					</div>
 				</div>
 			</div>
@@ -237,35 +251,35 @@
 		<section class="infinite-scroll">
 			<div class="scroll-container">
 				<div class="scroll-row row1" aria-label="Első kép sor">
-					<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Természet 1" />
-					<img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Természet 2" />
-					<img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Természet 3" />
-					<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Természet 4" />
-					<img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Természet 5" />
-					<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Természet 1" />
-					<img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Természet 2" />
-					<img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Természet 3" />
-					<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Természet 4" />
-					<img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Természet 5" />
-					<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Természet 1" />
-					<img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Természet 2" />
-					<img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Természet 3" />
+					<img src="img/allatetetesű.jpg" />
+					<img src="img/elefant.jpeg" alt="Természet 2" />
+					<img src="img/esti séta.jfif" alt="Természet 3" />
+					<img src="img/etterem.jpg" alt="Természet 4" />
+					<img src="img/jatszoter.jpg" alt="Természet 5" />
+					<img src="img/koala.jfif" alt="Természet 1" />
+					<img src="img/manki.jpeg" alt="Természet 2" />
+					<img src="img/oroszlan.jpeg" alt="Természet 3" />
+					<img src="img/pava.jpeg" alt="Természet 4" />
+					<img src="img/tiger.jpeg" alt="Természet 5" />
+					<img src="img/tropicarium.jpg" alt="Természet 1" />
+					<img src="img/tropicarium.jpg" alt="Természet 2" />
+					<img src="img/vizishow.png" alt="Természet 3" />
 				</div>
 			</div>
 			<div class="scroll-container">
 				<div class="scroll-row row2" aria-label="Második kép sor">
-					<img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Város 1" />
+					<img src="img/zsiraf.jpeg" alt="Város 1" />
 					<img src="https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Város 2" />
-					<img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Város 3" />
-					<img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Város 4" />
-					<img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Város 5" />
-					<img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Város 1" />
-					<img src="https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Város 2" />
-					<img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Város 3" />
-					<img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Város 4" />
-					<img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Város 5" />
-					<img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Város 1" />
-					<img src="https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Város 2" />
+					<img src="img/aligatorteknos.jpg" alt="Város 3" />
+					<img src="img/aligatorteknos.jpg" alt="Város 4" />
+					<img src="img/alpaca.jpg" alt="Város 5" />
+					<img src="img/apacalud.jpg" alt="Város 1" />
+					<img src="img/azsiaielefant.jpg" alt="Város 2" />
+					<img src="img/Dzseladapavian.jpg" alt="Város 3" />
+					<img src="img/feketemedve.jpg" alt="Város 4" />
+					<img src="img/mokusmalyom.jpg" alt="Város 5" />
+					<img src="img/orszarvu.jpg" alt="Város 1" />
+					<img src="img/esti séta.jfif" alt="Város 2" />
 				</div>
 			</div>
 		</section>
@@ -273,30 +287,31 @@
 	<footer>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-12"">
+				<div class="col-lg-6 col-md-6 col-sm-12 kovetesek">
 					<h3>Támogatók:</h3>
-					<ul class="">
-						<li class="iconok"><a href=""><i class="bi bi-spotify"></i></a></li>
-						<li class="iconok"><a href=""><i class="bi bi-bank"></i></a></li>
-						<li class="iconok"><a href=""><i class="bi bi-browser-chrome"></i></a></li>
-						<li class="iconok"><a href=""><i class="bi bi-code-slash"></i></a></li>
-						<li class="iconok"><a href=""><i class="bi bi-cup-hot-fill"></i></a></li>
-						<li class="iconok"><a href=""><i class="bi bi-fork-knife"></i></a></li>
+					<ul class="n">
+						<li class="iconok spotify"><a href=""><i class="bi bi-spotify"></i><span class="tooltip-text">spotify</span></a></li>
+						<li class="iconok bank"><a href=""><i class="bi bi-bank"></i><span class="tooltip-text">bank</span></a></li>
+						<li class="iconok chrome"><a href=""><i class="bi bi-browser-chrome"></i><span class="tooltip-text">chrome</span></a></li>
+						<li class="iconok kód"><a href=""><i class="bi bi-code-slash"></i><span class="tooltip-text">kód</span></a></li>
+						<li class="iconok kávé"><a href=""><i class="bi bi-cup-hot-fill"></i><span class="tooltip-text">kávé</span></a></li>
+						<li class="iconok kaja"><a href=""><i class="bi bi-fork-knife"></i><span class="tooltip-text">étel</span></a></li>
 					</ul>
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-12"">
-					<h3>Kövess minket!</h3>
-					<ul class="">
-						<li class="iconok"><a href=""><i class="bi bi-facebook"></i></a></li>
-						<li class="iconok"><a href=""><i class="bi bi-instagram"></i></a></li>
-						<li class="iconok"><a href=""><i class="bi bi-twitter"></i></a></li>
-						<li class="iconok"><a href=""><i class="bi bi-youtube"></i></a></li>
+				<div class="col-lg-6 col-md-6 col-sm-12 kovetes">
+					<h3>Kövess minket!</h3>	
+					<ul class="n">
+						<li class="iconok facebook"><a href=""><i class="bi bi-facebook"></i><span class="tooltip-text">facebook</span></a></li>
+						<li class="iconok instagram"><a href=""><i class="bi bi-instagram"></i><span class="tooltip-text">instagram</span></a></li>
+						<li class="iconok twitter"><a href=""><i class="bi bi-twitter"></i><span class="tooltip-text">twitter</span></a></li>
+						<li class="iconok youtube"><a href=""><i class="bi bi-youtube"></i><span class="tooltip-text">youtube</span></a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 	<script defer src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
