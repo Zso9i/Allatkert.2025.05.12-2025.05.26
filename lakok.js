@@ -2,57 +2,57 @@ const animals = [
     {
       name: "Ázsiai elefánt",
       latin: "Elephas maximus",
-      type: "mammal",
-      img: "img/elefant.jpeg",
+      type: "Emlős",
+      img: "img/azsiaielefant.jpg",
       desc: "Az elefánt a világ legnagyobb szárazföldi emlőse."
     },
     {
       name: "Fekete medve",
       latin: "Ursus americanus",
-      type: "mammal",
-      img: "img/elefant.jpeg",
+      type: "Emlős",
+      img: "img/feketemedve.jpg",
       desc: "A fekete medve Észak-Amerika egyik legnagyobb ragadozója."
     },
     {
       name: "Bolíviai mókusmajom",
       latin: "Saimiri boliviensis",
-      type: "mammal",
-      img: "img/elefant.jpeg",
+      type: "Emlős",
+      img: "img/mokusmalyom.jpg",
       desc: "A mókusmajom egy kis, fürge majomfaj."
     },
     {
       name: "Dzselada pávián",
       latin: "Theropithecus gelada",
-      type: "mammal",
-      img: "img/elefant.jpeg",
+      type: "Emlős",
+      img: "img/Dzseladapavian.jpg",
       desc: "A dzselada pávián a hegyvidékek lakója."
     },
     {
       name: "Apáca fütyülőlúd",
       latin: "Dendrocygna viduata",
-      type: "bird",
-      img: "img/elefant.jpeg",
+      type: "Madár",
+      img: "img/apacalud.jpg",
       desc: "Az apáca fütyülőlúd hangos és látványos madár."
     },
     {
       name: "Aligátorteknős",
       latin: "Chelydra serpentina",
-      type: "reptile",
-      img: "img/elefant.jpeg",
+      type: "Hüllő",
+      img: "img/aligatorteknos.jpg",
       desc: "Az aligátorteknős gyors és agresszív vízi hüllő."
     },
     {
       name: "Szélesszájú orrszarvú",
       latin: "Ceratotherium simum",
-      type: "mammal",
-      img: "img/elefant.jpeg",
+      type: "Emlős",
+      img: "img/orszarvu.jpg",
       desc: "A szélesszájú orrszarvú a legnagyobb orrszarvú faj."
     },
     {
       name: "Alpaka",
       latin: "Vicugna pacos",
-      type: "mammal",
-      img: "img/elefant.jpeg",
+      type: "Emlős",
+      img: "img/alpaca.jpg",
       desc: "Az alpaka déli-amerikai teveféle."
     }
   ];
